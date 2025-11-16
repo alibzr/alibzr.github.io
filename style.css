@@ -1,0 +1,54 @@
+body {
+  background: #f9f9f9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: #ddd;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 6px 0;
+}
+
+.expertise {
+  font-weight: bold;
+  color: #3876b5;
+  margin: 12px 0 10px 0;
+}
+
+.desc {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0 9px;
+  color: #3876b5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
