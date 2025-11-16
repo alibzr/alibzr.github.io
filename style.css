@@ -1,54 +1,88 @@
 body {
-  background: #f9f9f9;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #f7fafc 0%, #e6ecf5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
-.cv-container {
-  max-width: 400px;
-  margin: 40px auto;
-  padding: 32px;
+.cv-card {
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  border-radius: 24px;
+  box-shadow: 0 2px 32px rgba(72, 73, 92, 0.08), 0 1.5px 6px rgba(0,0,0,0.03);
+  padding: 44px 38px 38px 38px;
+  max-width: 420px;
+  width: 100%;
   text-align: center;
+  transition: box-shadow .2s;
+}
+
+.cv-card:hover {
+  box-shadow: 0 4px 48px rgba(72, 73, 92, 0.13), 0 3px 16px rgba(0,0,0,0.07);
+}
+
+.profile-section {
+  margin-bottom: 22px;
 }
 
 .profile-img {
-  width: 140px;
-  height: 140px;
-  border-radius: 70px;
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 16px;
-  background: #ddd;
+  background: #dde4ee;
+  box-shadow: 0 1px 8px rgba(72, 73, 92, 0.04);
 }
 
 h1 {
-  font-size: 2rem;
-  margin: 6px 0;
+  font-size: 2.25rem;
+  margin-bottom: 7px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #364259;
 }
 
 .expertise {
-  font-weight: bold;
-  color: #3876b5;
-  margin: 12px 0 10px 0;
+  font-size: 1.03rem;
+  font-weight: 500;
+  color: #4786d6;
+  margin-bottom: 4px;
 }
 
 .desc {
-  margin-bottom: 20px;
+  color: #526080;
   font-size: 1rem;
-  color: #333;
+  margin-bottom: 28px;
+  line-height: 1.5;
 }
 
-.links a {
-  display: inline-block;
-  margin: 0 9px;
-  color: #3876b5;
-  text-decoration: none;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px;
+}
+
+.cv-btn {
+  background: linear-gradient(96deg, #4786d6 0%, #b3c6e5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 12px 28px;
+  font-size: 1rem;
   font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 1px 6px rgba(72, 73, 92, 0.09);
+  transition: background .2s, box-shadow .2s, transform .1s;
+  cursor: pointer;
+  margin-bottom: 4px;
 }
 
-.links a:hover {
-  text-decoration: underline;
+.cv-btn:hover {
+  background: linear-gradient(96deg, #346bb0 0%, #a7b9d6 100%);
+  box-shadow: 0 3px 16px rgba(72, 73, 92, 0.15);
+  transform: translateY(-2px) scale(1.04);
 }
